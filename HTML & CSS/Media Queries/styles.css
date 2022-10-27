@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    
+    color: blueviolet;
+    margin: 25px 0px;
+
+}
+
+img{
+    height:300px;
+    width:500px;
+    float:right;
+    margin: 25px;
+    
+}
+.Parent{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.Son{
+    border:2px solid rgb(106, 41, 228);
+    display: flex;
+    box-sizing: border-box;
+    
+    padding: 75px 35px;
+    width: 500px;
+}
+.Daughter{
+    border: 2px soild black;
+}
+
+@media(max-width:768px){
+    h1{
+        color: crimson;
+    }
+    .Parent{
+        display: block;
+    }
+    .Daughter{
+        width: 100%;
+    }
+}

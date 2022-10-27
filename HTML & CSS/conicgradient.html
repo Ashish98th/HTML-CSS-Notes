@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Three colors */
+        #box1{ width:500px;
+        height: 400px;
+        border:2px;
+        margin:3px 5px;
+    background-image: conic-gradient(red,yellow,blue);
+    }
+ /* Five colors */
+    #box2{ width:500px;
+        height: 400px;
+        border:2px;
+        margin:3px 5px;
+    background-image: conic-gradient(red,yellow,blue,green,black,grey);
+    }
+    /* From 45 deg starts color from 45 deg angle */
+     /* background-image: conic-gradient(from angle,color1,color2,color3); */
+    #box3{ width:500px;
+        height: 400px;
+        border:2px;
+        margin:3px 5px;
+
+       
+    background-image: conic-gradient(from 45deg,red,yellow,blue);
+    }
+/* You can't see starting & ending of colors */
+    #box4{ width:500px;
+        height: 400px;
+        border:2px;
+        margin:3px 5px;
+background-image: conic-gradient(red,green,blue,red);
+    }
+
+    #box4{ width:500px;
+        height: 400px;
+        border:2px;
+        margin:3px 5px;
+background-image: conic-gradient();
+    }
+
+    /* Specifying the degree of colors from where next color will start  */
+    /* background-image:conic-gradient(color deg) */
+    #box5{ width:500px;
+        height: 400px;
+        border:2px;
+        margin:3px 5px;
+background-image: conic-gradient(red 180deg,blue);
+    }
+
+    /* Moving the center  */
+    /* background-image:conic-gradient(at x-axis,y-axis,color1,color2)  */
+    #box6{ width:500px;
+        height: 400px;
+        border:2px;
+        margin:3px 5px;
+       background-image: conic-gradient(at 10% 30%,red,yellow,blue);
+    }
+
+    #box6{ width:500px;
+        height: 400px;
+        border:2px;
+        margin:3px 5px;
+    background-image: repeating-conic-gradient(red 45%,blue 50%,yellow 60%);
+    }
+
+    #box7{ 
+        width:500px;
+        height: 400px;
+        border:2px;
+        margin:3px 5px;
+        border-radius: 50%;
+    background-image: repeating-conic-gradient(red 0deg 10deg,blue 10deg 20dg,yellow 20deg 30deg);
+    }
+   
+    /* Making Pie Chart  */
+#box7{ width:500px;
+    height: 400px;
+    border:2px;
+    border-radius: 50%;
+    margin:3px 5px;
+    background-image:conic-gradient(red,blue,yellow);
+}
+#box8{ 
+    /* Pie chart of diffrent colors with specific region  */
+    /* bacjground-image:conic-gradient(color1 starting deg,color1 ending degree,......)  */
+        width:500px;
+        height: 400px;
+        border:2px;
+        margin:3px 5px;
+        border-radius: 50%;
+    background-image:conic-gradient(red 0deg,red 90deg,blue 90deg,blue   180deg,yellow 180deg,yellow 270deg,green 270deg,green 360deg);
+    }
+    #box9{ width:500px;
+        height: 400px;
+        border:2px;
+        margin:3px 5px;
+         background-image: repeating-conic-gradient(red 0deg 10deg,yellow 10deg 20deg,blue 20deg 30deg);
+        /* background-image: conic-gradient(red,yellow,blue);  */
+       /* background-image:  repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg); */
+    /* background-image:repeating-conic-gradient(red 0deg 10deg,blue 10deg 20dg,yellow 20deg 30deg); */
+    }
+
+</style>
+
+
+</head>
+<body>
+    <h2>A conic gradient is a gradient with color transitions rotated around a center point.
+
+        To create a conic gradient you must define at least two colors.</h2>
+
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4">4)You can't see starting & ending of colors</div>
+        <div id="box5">5)Taking the percentage of each colors</div>
+        <div id="box6">6)fFrom where to where colors repeating</div>
+        <div id="box7">7</div>
+        <div id="box8"></div>
+        <div id="box9">9</div>
+</body>
+</html>

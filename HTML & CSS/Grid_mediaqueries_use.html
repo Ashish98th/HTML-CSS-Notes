@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+'navbar navbar navbar navbar'    
+'section section section aside'
+'footers footers footers footers';
+        }
+        @media only screen and (max-width:300px){
+            body{
+                background-color: red;
+            }
+        }
+            @media only screen and (min-width:300px) and (max-width:500px){
+                body{
+                    background-color: blue;
+                }
+                .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+'navbar navbar navbar navbar'    
+'section section aside aside'
+'footers footers footers footers';
+        }
+        aside{
+            display: none;   /*When Yiou don't wnat to display aside part */
+        }
+            }
+            @media only screen and (min-width:500px) and (max-width:800px){
+                body{
+                    background-color: yellow;
+                }
+                .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+'navbar navbar navbar navbar'    
+'section section section section'
+'aside aside aside aside';
+        }
+        span{
+            display: block;   /*making the span eleemnts from inline to block */
+        }
+        
+
+            }
+            @media (min-width:800px){
+                body{
+                    background-color: cyan;
+                }
+            }
+         .bdr{
+             border:2px solid black;
+             padding:23px;
+             background-color:wheat;
+         }
+         nav{
+        grid-area: navbar;
+        }
+        aside{
+            grid-area: aside;
+
+        }
+        section{
+grid-area: section;
+
+        }
+      
+        footer{
+            grid-area: footers;
+        }
+        span{
+font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <h3>navbar</h3>
+            <span>Home</span>  &nbsp;
+            <span>About us</span>  &nbsp;
+            <span>Services</span>  &nbsp;
+            <span>contact us</span>
+        </nav>
+        <section class="bdr">
+            <h3>section</h3>
+            <h2>Learn css in Hindi</h2>
+        </section>
+        <aside class="bdr">
+            <h3>aside</h3>
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright</footer>
+</body>
+</html>

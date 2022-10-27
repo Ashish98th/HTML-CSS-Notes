@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .container{
+display: grid;
+grid-gap: 2rem;
+grid-template-areas:
+'navbar navbar navbar navbar'    
+'section section aside aside'
+'footers footers footers footers';   /*this must be same as value inside a selctor*/
+/* 2fr section 2fr aside Matrix form same row same column */
+/* website will look like this grid will be made two rows and column will be there */
+        }
+        .item{
+            background-color: yellow;
+            border: 2px solid red;
+        }
+        #navbar{
+        grid-area: navbar;
+        }
+        #aside{
+            grid-area: aside;
+
+        }
+        #section{
+grid-area: section;
+
+        }
+      
+        footer{
+            grid-area: footers;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" class="item">
+        <div id="navbar" class="item">
+            home about contact us
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magnam sunt ut natus voluptatem, voluptate expedita. Rem nesciunt sequi laudantium officia vel porro?</div>
+        <div id="aside" class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et culpa excepturi explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias culpa ullam inventore? Laboriosam eos dolorum officia saepe explicabo fuga accusantium unde nisi, modi quidem commodi laudantium impedit aut omnis nostrum ipsa provident optio tenetur voluptatum tempore consequuntur perferendis sit mollitia! Blanditiis asperiores voluptas minus hic, labore officiis eius! Officia odit provident suscipit aspernatur id illum deleniti eum ea autem repellat vero numquam possimus minima eveniet est non saepe quisquam corrupti doloremque expedita, vitae consequuntur! Ullam, ducimus, nisi fuga voluptates libero ipsam necessitatibus dignissimos minus impedit deleniti mollitia recusandae facilis pariatur. Deleniti eius, quibusdam quam nostrum in facere eaque soluta repudiandae maiores vitae! Quis ducimus veritatis impedit deleniti non rem, earum autem obcaecati nihil quibusdam dicta mollitia voluptate omnis sapiente id hic optio delectus laudantium officia quo ex nemo, necessitatibus nostrum placeat! Quidem, expedita nisi facilis sapiente vel quasi libero quae ratione architecto, dolorum soluta qui cum quis, ut natus aperiam. Totam consequuntur quaerat placeat doloremque! Saepe enim laboriosam nemo repellendus ullam ab, amet aut asperiores eveniet praesentium necessitatibus fugiat facere autem totam adipisci repudiandae deleniti aliquid esse est nesciunt molestias blanditiis, tempora quas. Maxime eius quos, provident praesentium illum asperiores eveniet officiis natus quasi culpa animi voluptas soluta ex unde?
+        </div>
+        <footer>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati error quia molestiae.</footer>
+         <!--<div class="item" class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div> -->
+    </div>
+</body>
+</html>

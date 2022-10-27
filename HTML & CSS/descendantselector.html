@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p that is inside div only get the property  */
+    div p{
+        background-color:yellow;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>this is heading</h1>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <p>paragrpah 3</p>
+        <p>paragraph 4</p>
+    </div>
+
+    <div>
+        <h2>This is also heading</h2>
+        <p>para 5</p>
+        <p>para 6</p>
+    </div>
+
+
+    <p>para 7 </p>
+    <p>para 8</p>
+    <p>para 9</p>
+
+    <h2>all p after div will be selected</h2>
+    <div>
+        <section>i am section
+            <p>I am inside section paragraph not selected</p>
+        </section>
+         <p>i am a paragarph directly inside div selected</p>
+         <p>i am a para</p>
+         <section>
+             <p>The paragraph which won't get the property</p>
+         
+         </section>
+         
+         <p>I am the direct child of div selected</p>
+         <h1>I am the heading</h1>
+     </div>
+
+</body>
+</html>

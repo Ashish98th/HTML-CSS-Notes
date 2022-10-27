@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div{
+        border:2px solid aqua;
+        padding:5px;
+    }
+    img{
+        float:right;
+    }
+    .clearfix{
+        overflow:auto;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="bgi.jpg" alt="error loading" width="170" height="400">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maiores asperiores itaque quae ea debitis eveniet reiciendis magnam, voluptatibus veniam doloribus cupiditate, deserunt corporis?
+    </div>
+
+    <h2>With cLERFIX</h2>
+
+    <div class="clearfix">
+        <img src="bgi.jpg" alt="error loading" width="170" height="400">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maiores asperiores itaque quae ea debitis eveniet reiciendis magnam, voluptatibus veniam doloribus cupiditate, deserunt corporis?
+    </div>
+</body>
+</html>
+
+<!-- Notes:If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem:  -->

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* element 1~ element 2 */
+        div~p{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>para 1</p>
+        <p>para 2</p>
+    </div>
+<!-- select all the p elements which are after div  -->
+    <p>para 1 selected</p> 
+    <p>para 2 selected</p>
+    <p>para 3 selected</p>
+
+    <!-- p inside another element will not get selected in this case  -->
+    <section>
+        <p>this is para 6</p>
+
+    </section>
+
+    <p>para 7</p>
+    <p>para 8</p>
+
+    <div>
+        <p>para 9</p>
+        <p>para 10</p>
+    </div>
+
+    <p>para 11</p>
+    <p>para 12</p>
+</body>
+</html>
+
+
+<!-- Select the p elements which are after the div element but won't select which is inside in another element  -->

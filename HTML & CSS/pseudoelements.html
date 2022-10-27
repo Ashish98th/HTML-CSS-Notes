@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* selector::pseudo elements{} 
+        A CSS pseudo-element is used to style specified parts of an element. */
+        p::first-line{
+            color:red;
+        }
+        p::first-letter{
+            color:blue;
+        }
+        li::before{
+            content:url(smile.gif);
+        }
+        ul{
+            list-style: none;
+        }
+        li::after{
+            content:"i am the content after the list";
+        }
+        ul::after{
+            content:url(https://picsum.photos/seed/picsum/200/300);
+        }
+        li::before{
+            content:"⭐"
+        }
+    </style>
+</head>
+<body>
+    <p>para 1</p>
+    <p>para 2</p>
+    <p>para 3</p>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+    </ul>
+</body>
+</html>

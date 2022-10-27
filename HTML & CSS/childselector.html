@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Only the paragraph which is directly inside the div only get the property */
+        div>p{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+       <section>i am section
+           <p>I am inside section paragraph not selected</p>
+       </section>
+        <p>i am a paragarph directly inside div selected</p>
+        <p>i am a para</p>
+        <section>
+            <p>The paragraph which won't get the property</p>
+        
+        </section>
+        
+        <p>I am the direct child of div selected</p>
+        <h1>I am the heading</h1>
+    </div>
+
+    <p>I am a pargraph after the div</p>
+    <p>I am the next paragraph after the div</p>
+</body>
+</html>
+
+<!-- Notes:The p element which is directly inside a div will be selected but those which are inside another element will not be selected  -->

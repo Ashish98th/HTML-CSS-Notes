@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container{
+            background-color: yellowgreen;
+        } */
+        .box{
+            background-color: green;
+             width: 250px;         /* Scroll bar/progress bar  */
+            height: 250px;
+            position:relative;        
+            /* animation-name: Ashish; */
+            animation-name: Ash;
+            animation-duration: 10s;
+            animation-iteration-count:10; /* how many times to move /*
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in;  slow to fast  */
+            /* animation-timing-function: ease-out;  fast to slow */
+            /* animation-timing-function: ease-in-out; fast slow fast */
+            /* animation-delay: 3s; delay in animation */
+            /* animation-direction: alternate; */
+            /* animation-direction: reverse;   */
+            
+        }
+        @keyframes Ash{
+            0%{
+                 top:0px;
+                 left:0px;
+            }
+            25%{
+                background-color: aqua;
+                top:250px;
+                left:0px;
+
+            }
+            75%{
+                top:250px;
+                left:0px;   
+            }
+            100%{
+                top:0px;
+                left:250px;
+            }
+        }
+        @keyframes Ashish{
+            from{
+     widht:200px;
+            }
+            to{
+width:800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+
+    </div>
+    </div>
+</body>
+</html>

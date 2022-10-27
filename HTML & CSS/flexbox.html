@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background-color: dodgerblue;
+            height: 400px;
+            border: 2px solid black;
+             display: flex;  
+             /* //container becomes flex container,inside the container becomes flex item */
+             flex-direction: column;  
+             /* flex-direction: row; */
+             /* flex-direction: column-reverse; */
+             /* flex-direction: row-reverse; */
+             padding-top: 20px;
+             /* flex-wrap:nowrap; */
+             /* flex-wrap: wrap-reverse; */
+             /* flex-flow: row wrap;      Using two properties together */
+             /* flex-wrap:wrap ; */
+             /* Justifying the position of flex  */
+             /* justify-content: center; */
+             /* justify-content: start; */
+              /* justify-content: flex-end; */
+              /* justify-content: space-between; */
+
+              /* ALIGN FLEX-ITEM  */
+              align-items: center;
+              align-items: flex-start;
+              align-items: flex-end;
+               align-items: stretch;
+        }
+        .flex-container>div{
+            background-color: #f1f1f1;
+            width: 100px;
+            height: 150px;
+  margin: 10px 12px;
+  padding: 20px;
+  font-size: 30px;
+}
+#item-1{               
+    /* order: 2; */
+    /* The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items. */
+    /* flex-grow:3 ; */
+
+    /* flex properties for flex items  */
+    /* higher the order,later the it shows up in the container */
+
+}
+#item-2{
+    /* order: 3; */
+    /* flex-grow: 4; */
+flex-shrink: 5;
+}
+#item-3{
+    flex-basis: 120px; /* Specify the initial length of item acts according to the direction of flex whether it's column or row for column height can only be specified */
+}
+
+#fitem-4{
+    flex: 2 3 344px;  /*shorthand:flex grow /flex shrink/flex basis */
+
+}
+#item-6{
+    /* the align-self property specifies the alignment for the selected item inside the flexible container. */
+
+/* The align-self property overrides the default alignment set by the container's align-items property. */
+    align-self: center;
+    align-self: flex-start;
+    align-self: flex-end;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div   id="item-1">1</div>
+        <div  id="item-2">2</div>
+        <div id="item-3">3</div>
+        <div id="item-4">4</div>
+        <div id="item-5">5</div>
+        <div id="item-6">6</div>
+        
+    </div>
+    
+</body>
+</html>
+
+<!-- Notes:-The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+
+ -->

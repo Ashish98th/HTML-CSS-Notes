@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form{
+            background-color: red;
+            padding:50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter Your Details</h2>
+    <form>
+        <!-- Input-Text type  -->
+<!-- label  -->
+<label for="labelname">First Name:</label> <!--label tag means what this Name means.label is for which id is labelname-->
+
+<input type="text" name="firstname" id="labelname">
+Last Name:
+<input type="text" name="lastname"><br>
+<br>
+<!-- Input-Radio button type-->
+Age:<input type="radio"  name="age">under 18
+<input type="radio" checked name="age">over 18
+<br>
+<br>
+<!-- Drop down list -->
+<select name="qualification" multiple>
+    <option value="mba">Master of Buisness Administration</option>
+    <option value="mca">MCA</option>
+    <option value="bsc">B.sc</option>
+    <option value="B.Tech" selected>Bachelor of Technology</option>
+</select>
+
+<!-- Input-Submit -->
+<Input type="submit" value="click here">
+<Input type="reset">
+<br>
+<br>
+
+<!-- Input-password type  -->
+<label for="passwordlabel">Password:</label>
+
+<Input type="password" name="password" id="passwordlabel">
+    <br>
+    <br>
+
+    <!-- Input-checkbox type  -->
+    Interest:
+<input type="checkbox" name="interest"value="cricket" checked>cricket
+<input type="checkbox" name="interest"value="football">football
+<input type="checkbox" name="interest"value="hockey">hockey
+<br>
+<br>
+
+  <!-- Input-Button type  -->
+
+<Input type="button" value="Click this Button"> &nbsp  to know more
+<br>
+<br>
+    <!-- textarea  -->
+    Write about Yourself: <br><br>
+    <Textarea name="detailstext" cols="30" rows="10"></Textarea>
+</form>
+</body>
+</html>

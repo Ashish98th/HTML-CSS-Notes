@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* selector:pseudo-class{
+            property:value;
+        } */
+        a:visited{
+            color:yellow;
+        }
+        a:hover{
+            color:hotpink;
+        }
+        /* used to select an element which is activated when user click on it  */
+        a:active{
+            color:blue;
+        }
+        a:checked{
+            color:aqua;
+        }
+        li:nth-of-type(n){
+            color:blue;
+        }
+        li:nth-of-type(2n){
+            color:tomato;
+        }
+        li:nth-of-type(2n+1){
+            color:crimson;
+        }
+        input:focus{
+            color:blue;
+        }
+        input:focus{
+            color:crimson;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" target="_blank">This is link</a>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+
+    <input type="checkbox" name="checking">
+    <input type="text" name="fullname">
+</body>
+</html>
+
+ 
+<!--Notes:A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus -->

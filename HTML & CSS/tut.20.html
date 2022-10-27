@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*                                   Universal Selector:
+         *{                                          *{
+            color:red;                    property:value;
+        }                                
+                                        }
+         */                           
+ 
+        
+        body{
+            background-color:blue;
+        }
+        .container{
+            background-color: aqua;
+            border:2px solid rgb(156, 47, 219);
+            border-radius: 30px;
+            width: 230px;
+            /* padding-top:10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 30px; */
+            /* padding:20px 50px 65px 67px;  padding: top right bottom left */
+
+            /* margin-top: 23px;
+            margin-right: 23px;
+            margin-bottom: 23px;
+            margin-left:20px; */
+
+            margin:23px 45px 56px 67px; /*margin:top right bottom left */
+
+            padding:20px 30px;   /*padding:x(left/right) y(top/bottom); */
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <h3>This is heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quas hic repudiandae molestias consectetur quod dignissimos voluptate? Iste quo consequatur, repudiandae facere quae maiores?</p>
+    </div>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quas hic repudiandae molestias consectetur quod dignissimos voluptate? Iste quo consequatur, repudiandae facere quae maiores?</p>
+    </div>
+</body>
+</html>
+
+<!-- Box-Model:Box model is useful to know if we give margin padding border in a particular eleemnt  then where it will come.These all things cover Box Model.
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content 
+
+margin ->border->padding->content"(HTML ELEMENT e.g. paragraph)-->
